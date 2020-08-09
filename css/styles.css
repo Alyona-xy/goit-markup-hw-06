@@ -631,6 +631,8 @@
     margin-right: 10px;
     }
 
+
+    
    /*  Форма подписки в футере */
     .footer-subscribe-form {
         box-sizing: border-box;
@@ -658,11 +660,6 @@
         box-sizing: border-box;
         border-radius: 4px;
         background-color: transparent;
-    }
-    
-    .footer-subscribe-form-label {
-        position: absolute;
-        left: 16px;
 
         display: flex;
         align-items: center;
@@ -671,9 +668,10 @@
         line-height: 1.25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-    }
 
-    .footer-subscribe-form-button {
+    }
+    
+       .footer-subscribe-form-button {
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -716,10 +714,7 @@
         fill: var(--title-dark-theme-color);
     }
 
-    /* Здесь нужно добавить пропадание лейбла, но не знаю, как */
-    .footer-subscribe-form-input:focus, .footer-subscribe-form-input:not(:placeholder-shown){
-        background-color: tomato;
-    }
+    
 
 
 
