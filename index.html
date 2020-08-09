@@ -56,7 +56,7 @@
 <section class="hero overlay">
     <div class="container">
     <h1 class="hero-title animate__animated animate__pulse">Эффективные решения <br>для вашего бизнеса</h1>
-    <button class="modal-button" aria-label="Заказать услугу"><span class="button-text">Заказать услугу</span></button>
+    <button data-modal-open class="modal-button" aria-label="Заказать услугу"><span class="button-text">Заказать услугу</span></button>
 </div>
 </section>
 
@@ -419,12 +419,12 @@
 
 
 
-<div class="backdrop">
+<div data-modal class="backdrop is-hidden">
 <form action="#" class="modal-form">
 <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
 <div class="modal-form-input-wrapper">
-    <input type="text" name="user-name" id="user-modal-name"   class="modal-form-input" placeholder=" ">
+    <input type="text" name="user-name" id="user-modal-name"   class="modal-form-input" placeholder=" " autocomplete="off">
     <label class="modal-form-label" for="user-modal-name">Имя</label>
     <div class="form-name-icon">
     <svg class="form-name-icon-svg">
@@ -434,7 +434,7 @@
 </div>
 
 <div class="modal-form-input-wrapper">
-    <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" ">
+    <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" " autocomplete="off">
     <label class="modal-form-label label-name" for="user-modal-tel">Телефон</label>
     <div class="form-tel-icon">
     <svg class="form-tel-icon-svg">
@@ -444,7 +444,7 @@
 </div>
 
 <div class="modal-form-input-wrapper">
-    <input type="e-mail" name="user-mail" id="user-modal-mail" class="modal-form-input" placeholder=" ">
+    <input type="e-mail" name="user-mail" id="user-modal-mail" class="modal-form-input" placeholder=" " autocomplete="off">
     <label class="modal-form-label " for="user-modal-mail">Почта</label>
     <div class="form-mail-icon">
     <svg class="form-mail-icon-svg">
@@ -457,12 +457,15 @@
 
 <label class="modal-form-option-label">
     <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
+    <span class="checkbox-icon">
+    </span>
     <span class="modal-form-options-span">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form-options-span-link">Условия договора</a></span>
 </label>
 
+
 <button type="submit" class="modal-form-button">Отправить</button>
 
-<button class="modal-form-close">
+<button data-modal-close type="button" class="modal-form-close">
     <svg class="modal-form-close-icon-svg">
     <use href ="./images/svg/sprite.svg#icon-close"></use>
     </svg>    
