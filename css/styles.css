@@ -896,21 +896,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .modal-form {
         box-sizing: border-box;
+        position: relative;
         /* position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); */
         width: 528px;
         height: 581px;
-        padding: 40px;
         display: flex;
+        padding: 40px;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
 
     }
 
@@ -930,8 +934,10 @@
     }
 
     .modal-form-input {
+        box-sizing: border-box;
         width: 448px;
         height: 40px;
+        padding-left: 42px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         margin-bottom: 28px;
@@ -995,3 +1001,55 @@
         letter-spacing: 0.06em;
         color: var(--title-dark-theme-color);
     }
+
+    .form-name-icon,
+    .form-tel-icon,
+    .form-mail-icon {
+        position: absolute;
+        top: 17%;
+        left: 16px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .form-name-icon-svg,
+    .form-tel-icon-svg,
+    .form-mail-icon-svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--title-text-color);
+    }
+
+    .modal-form-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+    }
+
+    .modal-form-close-icon-svg {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+
+    .modal-form-input:focus + .modal-form-label {
+        color: var(--accent-color);
+        font-size: 12px;
+        line-height: 1.17;
+        transform: translate(-26px, -215%);
+    }
+
+    .modal-form-input:focus ~ 
+    .form-name-icon-svg {
+        fill: var(--accent-color);
+    }
+
+    

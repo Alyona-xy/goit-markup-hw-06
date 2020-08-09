@@ -424,20 +424,34 @@
 <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
 <div class="modal-form-input-wrapper">
-    <input type="text" name="user-name" id="user-modal-name"   class="modal-form-input">
+    <input type="text" name="user-name" id="user-modal-name"   class="modal-form-input" placeholder=" ">
     <label class="modal-form-label" for="user-modal-name">Имя</label>
+    <div class="form-name-icon">
+    <svg class="form-name-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-person"></use>
+    </svg>    
+    </div>
 </div>
 
 <div class="modal-form-input-wrapper">
-    <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input">
-    <label class="modal-form-label" for="user-modal-tel">Телефон</label>
+    <input type="tel" name="user-tel" id="user-modal-tel" class="modal-form-input" placeholder=" ">
+    <label class="modal-form-label label-name" for="user-modal-tel">Телефон</label>
+    <div class="form-tel-icon">
+    <svg class="form-tel-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-form-phone"></use>
+    </svg>    
+    </div>
 </div>
 
 <div class="modal-form-input-wrapper">
-    <input type="e-mail" name="user-mail" id="user-modal-mail" class="modal-form-input">
-    <label class="modal-form-label" for="user-modal-mail">Почта</label>
+    <input type="e-mail" name="user-mail" id="user-modal-mail" class="modal-form-input" placeholder=" ">
+    <label class="modal-form-label " for="user-modal-mail">Почта</label>
+    <div class="form-mail-icon">
+    <svg class="form-mail-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-form-email"></use>
+    </svg>    
+    </div>
 </div>
-
 
 <textarea name="user-message" class="modal-form-message" placeholder="Комментарий"></textarea>
 
@@ -447,6 +461,12 @@
 </label>
 
 <button type="submit" class="modal-form-button">Отправить</button>
+
+<button class="modal-form-close">
+    <svg class="modal-form-close-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-close"></use>
+    </svg>    
+</button>
 </form>
 </div>
 
