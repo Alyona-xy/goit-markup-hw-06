@@ -1090,6 +1090,7 @@
 
     .modal-form-checkbox {
         margin-bottom: 0px;
+        margin-right: 8px;
         /* position: absolute;
         width: 1px;
         height: 1px;
@@ -1100,23 +1101,22 @@
         overflow: hidden; */
     }
 
-    .checkbox-icon {
+    .checkbox-icon-svg {
         position: absolute;
         top: 20%;
-        left: -6px;
+        left: -4px;
         box-sizing: border-box;
         width: 16px;
         height: 15px;
         border: 2px solid var(--title-text-color);
         border-radius: 2px;
-        }
-
-    .checkbox-icon-svg {
-       /width: 16px;
-        height: 15px;
         fill: none;
         }
 
-    .modal-form-checkbox:checked +.checkbox-icon-svg {
-        fill: tomato;
+    .modal-form-checkbox:checked + .checkbox-icon-svg {
+        border-color: var(--accent-color);
+        background-origin: border-box;
+
+
+
     }
