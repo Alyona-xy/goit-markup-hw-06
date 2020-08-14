@@ -939,6 +939,7 @@
 
     .modal-form-input-wrapper {
         position: relative;
+        margin-bottom: 28px;
     }
 
     .modal-form-input {
@@ -948,7 +949,6 @@
         padding-left: 42px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        margin-bottom: 28px;
     }
 
     .modal-form-message {
@@ -1012,7 +1012,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 0;
+        top: 8px;
         right: 8px;
         width: 30px;
         height: 30px;
